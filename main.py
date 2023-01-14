@@ -60,7 +60,7 @@ def duplicates(contacts):
                     get_fi[6] = get_fi_com[6]
 
     for new_list in contacts:
-        if new_list not in new_contacts_list:
+        if new_list not in new_contacts_list and len(new_list) < 8:
             new_contacts_list.append(new_list)
 
     write_file(new_contacts_list)
